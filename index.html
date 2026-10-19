@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Discover handcrafted cakes, delightful pastries, and freshly baked treats at Maison de Sucre."
+    >
+
+    <title>Maison de Sucre | Freshly Baked Happiness</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================================
+         NAVIGATION BAR
+    ================================= -->
+
+    <header class="site-header">
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                Maison <span>de Sucre</span>
+            </a>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+
+                <li>
+                    <a href="#products">Our Products</a>
+                </li>
+
+                <li>
+                    <a href="#preorder">Pre-Order</a>
+                </li>
+
+                <li>
+                    <a href="#footer">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================================
+         MAIN CONTENT
+    ================================= -->
+
+    <main>
+
+        <!-- HERO SECTION -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    FRESHLY BAKED, EVERY DAY
+                </p>
+
+                <h1>
+                    A Little Sweetness
+                    <span>Makes Life Better.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover handcrafted cakes, delightful pastries,
+                    and freshly baked treats made with love.
+                    Every bite is a little moment of happiness.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#products" class="primary-button">
+                        Explore Our Treats
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                    <a href="#preorder" class="secondary-link">
+                        Place an Order
+                    </a>
+
+                </div>
+
+                <div class="hero-note">
+                    <span class="note-line"></span>
+                    Baked fresh. Served with love.
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <img
+                    src="images/hero-cake.jpg"
+                    alt="Beautifully decorated celebration cake"
+                >
+
+                <div class="image-badge">
+                    <span>Made with</span>
+                    <strong>Love & Care</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DECORATIVE DIVIDER -->
+
+        <div class="section-divider">
+            <span></span>
+            <p>A LITTLE SOMETHING SWEET</p>
+            <span></span>
+        </div>
+
+
+        <!-- ================================
+             FEATURED PRODUCTS
+        ================================= -->
+
+        <section class="products-section" id="products">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    OUR SPECIALTIES
+                </p>
+
+                <h2>
+                    Made to Make You Smile
+                </h2>
+
+                <p>
+                    Discover your next favourite treat,
+                    lovingly prepared just for you.
+                </p>
+
+            </div>
+
+
+            <div class="product-grid">
+
+                <!-- PRODUCT 1 -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="images/chocolate-cake.jpg"
+                            alt="Chocolate cake with creamy frosting"
+                            loading="lazy"
+                        >
+
+                        <span class="product-tag">
+                            BESTSELLER
+                        </span>
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-title-row">
+                            <h3>Chocolate Cake</h3>
+                            <span class="product-price">₹500</span>
+                        </div>
+
+                        <p class="product-description">
+                            Rich chocolate layers with
+                            smooth, creamy frosting.
+                        </p>
+
+                        <div class="quantity-selector">
+
+                            <button
+                                type="button"
+                                aria-label="Decrease chocolate cake quantity"
+                            >
+                                −
+                            </button>
+
+                            <span>1</span>
+
+                            <button
+                                type="button"
+                                aria-label="Increase chocolate cake quantity"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                        <button type="button" class="add-to-cart-btn">
+                            Add to Order
+                            <span aria-hidden="true">→</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 2 -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="images/red-velvet.jpg"
+                            alt="Red velvet cake with cream frosting"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-title-row">
+                            <h3>Red Velvet Cake</h3>
+                            <span class="product-price">₹600</span>
+                        </div>
+
+                        <p class="product-description">
+                            Soft red velvet layers with
+                            delicate cream frosting.
+                        </p>
+
+                        <div class="quantity-selector">
+
+                            <button
+                                type="button"
+                                aria-label="Decrease red velvet cake quantity"
+                            >
+                                −
+                            </button>
+
+                            <span>1</span>
+
+                            <button
+                                type="button"
+                                aria-label="Increase red velvet cake quantity"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                        <button type="button" class="add-to-cart-btn">
+                            Add to Order
+                            <span aria-hidden="true">→</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 3 -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="images/vanilla-cupcake.jpg"
+                            alt="Vanilla cupcake with creamy frosting"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-title-row">
+                            <h3>Vanilla Cupcake</h3>
+                            <span class="product-price">₹80</span>
+                        </div>
+
+                        <p class="product-description">
+                            A fluffy vanilla cupcake
+                            topped with creamy frosting.
+                        </p>
+
+                        <div class="quantity-selector">
+
+                            <button
+                                type="button"
+                                aria-label="Decrease vanilla cupcake quantity"
+                            >
+                                −
+                            </button>
+
+                            <span>1</span>
+
+                            <button
+                                type="button"
+                                aria-label="Increase vanilla cupcake quantity"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                        <button type="button" class="add-to-cart-btn">
+                            Add to Order
+                            <span aria-hidden="true">→</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 4 -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="images/chocolate-brownie.jpg"
+                            alt="Rich chocolate brownie"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-title-row">
+                            <h3>Chocolate Brownie</h3>
+                            <span class="product-price">₹120</span>
+                        </div>
+
+                        <p class="product-description">
+                            A deliciously rich brownie
+                            with a soft, fudgy centre.
+                        </p>
+
+                        <div class="quantity-selector">
+
+                            <button
+                                type="button"
+                                aria-label="Decrease chocolate brownie quantity"
+                            >
+                                −
+                            </button>
+
+                            <span>1</span>
+
+                            <button
+                                type="button"
+                                aria-label="Increase chocolate brownie quantity"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                        <button type="button" class="add-to-cart-btn">
+                            Add to Order
+                            <span aria-hidden="true">→</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             PRE-ORDER SECTION
+        ================================= -->
+
+        <section class="preorder-section" id="preorder">
+
+            <div class="preorder-content">
+
+                <div class="preorder-intro">
+
+                    <p class="eyebrow">
+                        MADE JUST FOR YOU
+                    </p>
+
+                    <h2>
+                        Make Your
+                        <span>Moments Sweeter.</span>
+                    </h2>
+
+                    <p>
+                        Planning a birthday, a celebration,
+                        or simply craving something delicious?
+                        Tell us what you have in mind.
+                    </p>
+
+                    <div class="preorder-note">
+                        <span class="note-icon" aria-hidden="true">✦</span>
+
+                        <p>
+                            Your special moments deserve
+                            something freshly baked.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <form class="preorder-form">
+
+                    <div class="form-heading">
+                        <h3>Place Your Pre-Order</h3>
+
+                        <p>
+                            Fill in the details below to get started.
+                        </p>
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="customer-name">
+                            Your Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="customer-name"
+                            name="customerName"
+                            placeholder="Enter your full name"
+                            required
+                            minlength="2"
+                            autocomplete="name"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your 10-digit number"
+                            required
+                            pattern="[0-9]{10}"
+                            inputmode="numeric"
+                            title="Enter a 10-digit phone number"
+                            autocomplete="tel"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="pickup-date">
+                            Preferred Pickup Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="pickup-date"
+                            name="pickupDate"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="order-details">
+                            Tell Us About Your Order
+                        </label>
+
+                        <textarea
+                            id="order-details"
+                            name="orderDetails"
+                            rows="4"
+                            placeholder="Products, quantities, flavours, or special requests..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="primary-button form-submit">
+                        Submit Pre-Order
+                        <span aria-hidden="true">→</span>
+                    </button>
+
+                    <p class="form-disclaimer">
+                        We look forward to making something special for you.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer class="site-footer" id="footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="footer-logo">
+                    Maison <span>de Sucre</span>
+                </a>
+
+                <p>
+                    Little treats, lovely moments,
+                    and happiness in every bite.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Explore</h3>
+
+                <a href="#products">Our Products</a>
+                <a href="#preorder">Pre-Order</a>
+                <a href="index.html">Home</a>
+
+            </div>
+
+
+            <div class="footer-message">
+
+                <h3>Baked with Love</h3>
+
+                <p>
+                    Bringing a little sweetness
+                    to your everyday moments.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Maison de Sucre.
+                All rights reserved.
+            </p>
+
+            <p>
+                Freshly baked, always from the heart.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
