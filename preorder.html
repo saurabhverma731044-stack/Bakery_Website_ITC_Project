@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pre-Order | Maison de Sucre</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="site-header">
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                Maison <span>de Sucre</span>
+            </a>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="products.html">Our Products</a></li>
+
+                <li><a href="preorder.html" class="active">Pre-Order</a></li>
+
+                <li><a href="about.html">About Us</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- PAGE INTRODUCTION -->
+
+    <main>
+
+        <section class="preorder-hero">
+
+            <p class="eyebrow">MADE ESPECIALLY FOR YOU</p>
+
+            <h1>Make Your Celebration Sweeter</h1>
+
+            <p>
+                Tell us what you have in mind, and let us prepare
+                something special for your celebration.
+            </p>
+
+        </section>
+
+
+        <!-- ORDER FORM -->
+
+        <section class="order-section">
+
+            <div class="order-intro">
+
+                <p class="eyebrow">YOUR ORDER, YOUR WAY</p>
+
+                <h2>Plan Your Perfect Treat</h2>
+
+                <p>
+                    Complete the details below to share your order
+                    preferences with our bakery.
+                </p>
+
+                <div class="order-note">
+
+                    <span class="note-icon">✦</span>
+
+                    <div>
+                        <h3>Freshly prepared for you</h3>
+
+                        <p>
+                            Share your preferences so your order can
+                            be prepared according to your occasion.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="order-note">
+
+                    <span class="note-icon">♡</span>
+
+                    <div>
+                        <h3>Personalise your cake</h3>
+
+                        <p>
+                            Add a special message or describe the
+                            design you would love.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FORM -->
+
+            <form class="preorder-form" action="#" method="get">
+
+                <div class="form-heading">
+
+                    <h2>Order Details</h2>
+
+                    <p>
+                        Fields marked with * are required.
+                    </p>
+
+                </div>
+
+
+                <!-- CUSTOMER INFORMATION -->
+
+                <fieldset class="form-group">
+
+                    <legend>01. Your Information</legend>
+
+                    <div class="form-grid">
+
+                        <div class="form-field">
+
+                            <label for="customer-name">
+                                Full Name *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="customer-name"
+                                name="customer-name"
+                                placeholder="Enter your full name"
+                                required
+                                minlength="2"
+                                maxlength="60"
+                            >
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="phone">
+                                Phone Number *
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="10-digit mobile number"
+                                pattern="[6-9][0-9]{9}"
+                                title="Enter a valid 10-digit Indian mobile number"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-field full-width">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+                <!-- PRODUCT INFORMATION -->
+
+                <fieldset class="form-group">
+
+                    <legend>02. Choose Your Treat</legend>
+
+                    <div class="form-grid">
+
+                        <div class="form-field">
+
+                            <label for="product">
+                                Select Product *
+                            </label>
+
+                            <select
+                                id="product"
+                                name="product"
+                                required
+                            >
+
+                                <option value="" selected disabled>
+                                    Choose a product
+                                </option>
+
+                                <option value="chocolate-truffle">
+                                    Chocolate Truffle Cake
+                                </option>
+
+                                <option value="red-velvet">
+                                    Red Velvet Cake
+                                </option>
+
+                                <option value="vanilla-cupcakes">
+                                    Vanilla Cupcakes
+                                </option>
+
+                                <option value="chocolate-brownies">
+                                    Chocolate Brownies
+                                </option>
+
+                                <option value="custom-cake">
+                                    Customised Celebration Cake
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="quantity">
+                                Quantity *
+                            </label>
+
+                            <input
+                                type="number"
+                                id="quantity"
+                                name="quantity"
+                                min="1"
+                                max="20"
+                                value="1"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="cake-type">
+                                Cake Preference
+                            </label>
+
+                            <select id="cake-type" name="cake-type">
+
+                                <option value="not-applicable">
+                                    Not Applicable
+                                </option>
+
+                                <option value="egg">
+                                    With Egg
+                                </option>
+
+                                <option value="eggless">
+                                    Eggless
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="occasion">
+                                Occasion
+                            </label>
+
+                            <select id="occasion" name="occasion">
+
+                                <option value="">
+                                    Select an occasion
+                                </option>
+
+                                <option value="birthday">
+                                    Birthday
+                                </option>
+
+                                <option value="anniversary">
+                                    Anniversary
+                                </option>
+
+                                <option value="wedding">
+                                    Wedding
+                                </option>
+
+                                <option value="festival">
+                                    Festival
+                                </option>
+
+                                <option value="other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+                <!-- PICKUP DETAILS -->
+
+                <fieldset class="form-group">
+
+                    <legend>03. Pickup Details</legend>
+
+                    <div class="form-grid">
+
+                        <div class="form-field">
+
+                            <label for="pickup-date">
+                                Preferred Pickup Date *
+                            </label>
+
+                            <input
+                                type="date"
+                                id="pickup-date"
+                                name="pickup-date"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="pickup-time">
+                                Preferred Pickup Time *
+                            </label>
+
+                            <select
+                                id="pickup-time"
+                                name="pickup-time"
+                                required
+                            >
+
+                                <option value="" selected disabled>
+                                    Select a time
+                                </option>
+
+                                <option value="10-12">
+                                    10:00 AM – 12:00 PM
+                                </option>
+
+                                <option value="12-14">
+                                    12:00 PM – 2:00 PM
+                                </option>
+
+                                <option value="14-16">
+                                    2:00 PM – 4:00 PM
+                                </option>
+
+                                <option value="16-18">
+                                    4:00 PM – 6:00 PM
+                                </option>
+
+                                <option value="18-20">
+                                    6:00 PM – 8:00 PM
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+                <!-- CUSTOMISATION -->
+
+                <fieldset class="form-group">
+
+                    <legend>04. Make It Special</legend>
+
+                    <div class="form-grid">
+
+                        <div class="form-field full-width">
+
+                            <label for="cake-message">
+                                Message on Cake
+                            </label>
+
+                            <input
+                                type="text"
+                                id="cake-message"
+                                name="cake-message"
+                                placeholder="e.g. Happy Birthday, Ananya!"
+                                maxlength="80"
+                            >
+
+                        </div>
+
+
+                        <div class="form-field full-width">
+
+                            <label for="special-requests">
+                                Additional Requirements
+                            </label>
+
+                            <textarea
+                                id="special-requests"
+                                name="special-requests"
+                                rows="5"
+                                maxlength="500"
+                                placeholder="Describe your preferred design, colours, flavours or any other requirements..."
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+                <!-- SUBMIT -->
+
+                <div class="form-footer">
+
+                    <p>
+                        Your final price and order confirmation
+                        will need to be confirmed by the bakery.
+                    </p>
+
+                    <button type="submit" class="submit-order-button">
+                        Submit Order Request <span>→</span>
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <a href="index.html" class="logo">
+            Maison <span>de Sucre</span>
+        </a>
+
+        <p>
+            Freshly baked happiness, one treat at a time.
+        </p>
+
+        <p class="copyright">
+            &copy; 2026 Maison de Sucre. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
