@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Themed Cakes | Petal & Crumb Bakery</title>
+  <meta name="description" content="Discover magical anime character themed cakes: Devil Fruit Pinata Smash, Gojo & Tanjiro Pull-Me-Up Lava, Anya & Naruto 3D Fondant, Sailor Moon Rosettes, and Multi-Tier celebration cakes. Transparent pricing in Indian Rupees (₹).">
+
+  <!-- Favicon Emoji -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Google Fonts: Fredoka (Warm rounded headings), Fraunces (Warm patisserie serif), Plus Jakarta Sans & Quicksand (Smooth body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="anime-styles.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       TOP ANNOUNCEMENT BAR
+       ========================================== -->
+  <div class="top-notice-bar" role="banner">
+    <div class="notice-pill">
+      <span>🌸</span> Handcrafted Daily with Organic Dairy & Japanese Matcha & Fruit Extracts
+    </div>
+    <div class="notice-pill veg">
+      <span class="veg-icon-badge"></span> 100% Eggless & Pure Vegetarian Available
+    </div>
+    <div class="notice-pill">
+      <span>🇮🇳</span> All Prices Listed in Indian Rupees (₹)
+    </div>
+  </div>
+
+  <!-- ==========================================
+       SITE HEADER & NAVIGATION
+       ========================================== -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="anime-cakes.html" class="brand-logo" aria-label="Petal & Crumb Anime Cakes">
+        <div class="logo-badge" aria-hidden="true">⚡</div>
+        <div class="brand-text">
+          <span class="brand-title">Petal & Crumb</span>
+          <span class="brand-tagline">Anime Patisserie Studio 🌸</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#cake-types">Cake Styles 🍰</a></li>
+        <li><a href="#catalog" class="active">Anime Catalog 🍥</a></li>
+        <li><a href="#customizer">Custom Cake Lab 🎨</a></li>
+        <li><a href="#safety">Purity Guarantee 🛡️</a></li>
+        <li><a href="index.html" style="color: var(--brand-sakura); font-weight: 700;">Classic Bakery Menu 🌸</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn-anime-builder" onclick="scrollToCustomizer()">
+          <span>🎨</span> Build Custom Anime Cake
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==========================================
+       HERO BANNER - WARM, LIGHT & DELIGHTFUL
+       ========================================== -->
+  <main>
+    <section class="hero-section">
+      <div class="container hero-content">
+        <div class="hero-pill-badge">
+          <span>✨</span> Where Your Favorite Anime Legends Become Delicious Reality
+        </div>
+
+        <h1 class="hero-title">
+          Spectacular <span class="highlight-sakura">Anime Themed Cakes</span> <br>
+          Handcrafted in <span class="highlight-gold">Every Dream Style</span> 🍰
+        </h1>
+
+        <p class="hero-desc">
+          Celebrate birthdays, watch parties, and milestone moments with iconic anime heroes. From smashable Devil Fruit Pinatas and Gojo Cursed Lava cascades to Anya Forger 3D sculptures and Totoro forest creams—with clear pricing in Indian Rupees.
+        </p>
+
+        <div class="hero-highlights-strip">
+          <div class="hero-feature-pill">
+            <span>🔨</span> <strong>Pinata Smash</strong> with Wooden Mallet
+          </div>
+          <div class="hero-feature-pill">
+            <span>🌊</span> <strong>Pull-Me-Up Lava</strong> Tsunami Cakes
+          </div>
+          <div class="hero-feature-pill">
+            <span>🎨</span> <strong>3D Fondant</strong> Hand-Sculpted Art
+          </div>
+          <div class="hero-feature-pill">
+            <span>🌱</span> <strong>100% Eggless</strong> Pure Veg Options
+          </div>
+          <div class="hero-feature-pill">
+            <span>💰</span> Starting from <strong>₹649</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 1: THE 6 CORE ANIME CAKE TYPES
+         ========================================== -->
+    <section class="cake-types-section" id="cake-types">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Anime Cake Styles</span>
+          <h2 class="section-heading">Choose Your Battle Celebration Style</h2>
+          <p class="section-subtext">
+            Every anime world comes to life in six specialized patisserie architecture styles.
+          </p>
+        </div>
+
+        <div class="types-card-grid">
+          <!-- 1. Pinata Smash Cake -->
+          <article class="type-showcase-card" onclick="document.querySelector('[data-filter=\'pinata\']').click(); document.getElementById('catalog').scrollIntoView({behavior: 'smooth'});">
+            <div class="type-card-icon" style="background: #FFF1E6;">🔨</div>
+            <h3 class="type-card-title">Pinata Smash Cakes</h3>
+            <div class="type-card-price-hint">Starts from ₹1,299 • Includes Wooden Mallet</div>
+            <p class="type-card-desc">
+              Crisp Belgian chocolate spheres crafted like Devil Fruits, Dragon Balls, and Pokéballs. Smash open with the included wooden mallet to reveal anime chocolates and gold coin treasures!
+            </p>
+            <div class="type-card-characters">
+              <span class="mini-char-pill">One Piece Devil Fruit</span>
+              <span class="mini-char-pill">Dragon Ball Z</span>
+              <span class="mini-char-pill">Pokéball</span>
+            </div>
+          </article>
+
+          <!-- 2. Pull-Me-Up Lava Cakes -->
+          <article class="type-showcase-card" onclick="document.querySelector('[data-filter=\'pullmeup\']').click(); document.getElementById('catalog').scrollIntoView({behavior: 'smooth'});">
+            <div class="type-card-icon" style="background: #FFEBF0;">🌊</div>
+            <h3 class="type-card-title">Pull-Me-Up Tsunami Cakes</h3>
+            <div class="type-card-price-hint">Starts from ₹999 • Sensational Flow</div>
+            <p class="type-card-desc">
+              Surrounded by a transparent anime haori collar. Lift the sleeve at cake-cutting and release a dramatic, velvety wave of cursed energy or fire-breathing cream lava over the tiers!
+            </p>
+            <div class="type-card-characters">
+              <span class="mini-char-pill">Tanjiro Kagura Fire</span>
+              <span class="mini-char-pill">Gojo Infinite Void</span>
+              <span class="mini-char-pill">Shinchan Chocobi</span>
+            </div>
+          </article>
+
+          <!-- 3. 3D Hand-Sculpted Fondant -->
+          <article class="type-showcase-card" onclick="document.querySelector('[data-filter=\'fondant3d\']').click(); document.getElementById('catalog').scrollIntoView({behavior: 'smooth'});">
+            <div class="type-card-icon" style="background: #FEF9C3;">🎨</div>
+            <h3 class="type-card-title">3D Sculpted Fondant</h3>
+            <div class="type-card-price-hint">Starts from ₹1,899 • Edible Sculptures</div>
+            <p class="type-card-desc">
+              Mind-bending edible anime sculptures made with premium marshmallow fondant, featuring floating Ichiraku ramen noodles, Anya's expressions, and Pochita's chainsaw engine.
+            </p>
+            <div class="type-card-characters">
+              <span class="mini-char-pill">Anya Waku Waku</span>
+              <span class="mini-char-pill">Naruto Ramen Bowl</span>
+              <span class="mini-char-pill">Pochita Chainsaw</span>
+            </div>
+          </article>
+
+          <!-- 4. Fresh Cream & Rosette Swirls -->
+          <article class="type-showcase-card" onclick="document.querySelector('[data-filter=\'cream\']').click(); document.getElementById('catalog').scrollIntoView({behavior: 'smooth'});">
+            <div class="type-card-icon" style="background: #FDF2F8;">🌸</div>
+            <h3 class="type-card-title">Fresh Cream & Rosettes</h3>
+            <div class="type-card-price-hint">Starts from ₹899 • Light & Silky</div>
+            <p class="type-card-desc">
+              Feather-light whipped dairy cream piped in gentle pastel rosettes, Japanese matcha moss textures, and edible sugar crystal crescent wands. Mildly sweet and meltingly soft.
+            </p>
+            <div class="type-card-characters">
+              <span class="mini-char-pill">Sailor Moon Crystal</span>
+              <span class="mini-char-pill">Totoro Matcha Forest</span>
+              <span class="mini-char-pill">Nezuko Blossom</span>
+            </div>
+          </article>
+
+          <!-- 5. Multi-Tier Grand Celebration -->
+          <article class="type-showcase-card" onclick="document.querySelector('[data-filter=\'multitier\']').click(); document.getElementById('catalog').scrollIntoView({behavior: 'smooth'});">
+            <div class="type-card-icon" style="background: #EFF6FF;">🏰</div>
+            <h3 class="type-card-title">Multi-Tier Grand Cakes</h3>
+            <div class="type-card-price-hint">Starts from ₹2,199 • 2 to 3 Tiers</div>
+            <p class="type-card-desc">
+              Stunning centerpiece cakes engineered with internal food-grade support dowels for major celebrations, depicting Wall Maria, the Thousand Sunny ship, and Konoha Hokage Mountain.
+            </p>
+            <div class="type-card-characters">
+              <span class="mini-char-pill">Attack on Titan</span>
+              <span class="mini-char-pill">Thousand Sunny</span>
+              <span class="mini-char-pill">Hokage Monument</span>
+            </div>
+          </article>
+
+          <!-- 6. Japanese Bento Mini Cakes -->
+          <article class="type-showcase-card" onclick="document.querySelector('[data-filter=\'bento\']').click(); document.getElementById('catalog').scrollIntoView({behavior: 'smooth'});">
+            <div class="type-card-icon" style="background: #F2FBF6;">🎀</div>
+            <h3 class="type-card-title">Japanese Bento Mini Cakes</h3>
+            <div class="type-card-price-hint">Starts from ₹649 • Pocket 4-inch Box</div>
+            <p class="type-card-desc">
+              Charming 4-inch lunchbox cakes packed in eco-friendly sugarcane bento containers with wooden cutlery. Famous for Anya's smirk meme and Ghibli soot sprites.
+            </p>
+            <div class="type-card-characters">
+              <span class="mini-char-pill">Anya Smirk</span>
+              <span class="mini-char-pill">Ghibli Soot Sprite</span>
+              <span class="mini-char-pill">Naruto Spiral</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 2: FULL ANIME CAKES CATALOG
+         ========================================== -->
+    <section class="section" id="catalog" style="padding-top: 1rem;">
+      <div class="container">
+        
+        <!-- Filter and Search Toolbar -->
+        <div class="filter-sticky-bar">
+          <div class="filter-row-top">
+            <!-- Search Box -->
+            <div class="search-input-wrap">
+              <span class="search-icon" aria-hidden="true">🔍</span>
+              <input 
+                type="text" 
+                id="animeSearchInput" 
+                class="anime-search-box"
+                placeholder="Search anime, character, flavor, or style (e.g. Naruto, Gojo, Anya, Luffy, Matcha)..."
+                aria-label="Search anime cakes"
+              >
+            </div>
+
+            <!-- Eggless Filter Toggle -->
+            <label class="veg-toggle-wrap">
+              <input type="checkbox" id="egglessOnlyToggle">
+              <span class="veg-icon-badge"></span>
+              <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-dark);">
+                100% Eggless Pure Veg Only 🌱
+              </span>
+            </label>
+          </div>
+
+          <!-- Cake Type Filter Pills -->
+          <div class="filter-pills-scroll" role="tablist" aria-label="Filter cakes by style">
+            <button class="filter-pill-btn active" data-filter="all" role="tab">All Anime Styles ⚡</button>
+            <button class="filter-pill-btn" data-filter="pinata" role="tab">Pinata Smash 🔨</button>
+            <button class="filter-pill-btn" data-filter="pullmeup" role="tab">Pull-Me-Up Lava 🌊</button>
+            <button class="filter-pill-btn" data-filter="fondant3d" role="tab">3D Sculpted 🎨</button>
+            <button class="filter-pill-btn" data-filter="cream" role="tab">Fresh Cream Swirl 🌸</button>
+            <button class="filter-pill-btn" data-filter="multitier" role="tab">Multi-Tier Grand 🏰</button>
+            <button class="filter-pill-btn" data-filter="bento" role="tab">Bento Mini Cakes 🎀</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Anime Cakes Grid (Rendered by anime-script.js) -->
+        <div class="cakes-catalog-grid" id="cakesCatalogGrid">
+          <!-- Dynamically populated -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 3: INTERACTIVE CUSTOM ANIME CAKE LAB
+         ========================================== -->
+    <section class="customizer-section" id="customizer">
+      <div class="container">
+        <div class="customizer-box">
+          <div class="section-head" style="margin-bottom: 1.5rem;">
+            <span class="section-tag">Interactive Anime Cake Lab</span>
+            <h2 class="section-heading">Forge Your Custom Anime Celebration Cake</h2>
+            <p class="section-subtext">
+              Personalize with the honoree’s name, their ultimate anime franchise, sponge flavor, and tiers. Watch the live Rupee total update in real time!
+            </p>
+          </div>
+
+          <div class="customizer-grid">
+            <!-- Left: Form Controls -->
+            <div class="customizer-form-controls">
+              <!-- 1. Honoree's Name -->
+              <div class="form-group-block">
+                <label for="customHonoreeName" class="form-label">
+                  <span>1.</span> Honoree’s Name (Piped in Edible Japanese / English Katakana Script)
+                </label>
+                <input 
+                  type="text" 
+                  id="customHonoreeName" 
+                  class="form-input" 
+                  placeholder="e.g. Rohan, Ananya, Kabir, Rhea..." 
+                  value="Rohan"
+                >
+              </div>
+
+              <!-- 2. Birthday Milestone -->
+              <div class="form-group-block">
+                <label for="customAgeSelect" class="form-label">
+                  <span>2.</span> Milestone / Celebration Occasion
+                </label>
+                <select id="customAgeSelect" class="form-select">
+                  <option value="Birthday" selected>Birthday Celebration 🎂</option>
+                  <option value="10th">10th Double-Digit Birthday 🎉</option>
+                  <option value="16th">16th Sweet Sixteen (Sweet & Epic) ⚡</option>
+                  <option value="18th">18th Adult Shinobi Milestone 🗡️</option>
+                  <option value="21st">21st Grand Pirate Coronation 🏴‍☠️</option>
+                  <option value="Watch Party">Anime Finale / Movie Watch Party 🍿</option>
+                </select>
+              </div>
+
+              <!-- 3. Anime Franchise Selection -->
+              <div class="form-group-block">
+                <label for="customAnimeSelect" class="form-label">
+                  <span>3.</span> Choose Favorite Anime Franchise
+                </label>
+                <select id="customAnimeSelect" class="form-select">
+                  <!-- Populated dynamically via JS -->
+                </select>
+              </div>
+
+              <!-- 4. Cake Flavor -->
+              <div class="form-group-block">
+                <label for="customFlavorSelect" class="form-label">
+                  <span>4.</span> Select Artisanal Flavor Profile
+                </label>
+                <select id="customFlavorSelect" class="form-select">
+                  <option value="choco" selected>Belgian Dark Chocolate Truffle (Rich & Fudgy)</option>
+                  <option value="matcha">Kyoto Matcha Green Tea & White Chocolate Silk</option>
+                  <option value="sakura">Sakura Strawberry Shortcake & Fresh Chantilly</option>
+                  <option value="butterscotch">Crunchy Caramel Butterscotch</option>
+                  <option value="mango">Tropical Alphonso Mango Cream</option>
+                  <option value="peanut">Roasted Peanut Butter Fudge (Anya's Favorite 🥜)</option>
+                </select>
+              </div>
+
+              <!-- 5. Tiers / Size -->
+              <div class="form-group-block">
+                <label class="form-label">
+                  <span>5.</span> Choose Number of Tiers & Portion Size
+                </label>
+                <div class="custom-tier-selector">
+                  <div class="custom-tier-card" data-tier="1tier">
+                    <strong>1 Tier</strong>
+                    <span>1 Kg (8-10 people)</span>
+                  </div>
+                  <div class="custom-tier-card active" data-tier="2tier">
+                    <strong>2 Tiers ⭐</strong>
+                    <span>2 Kg (18-20 people)</span>
+                  </div>
+                  <div class="custom-tier-card" data-tier="3tier">
+                    <strong>3 Tiers Grand</strong>
+                    <span>3.5 Kg (35+ people)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Dietary Note -->
+              <div style="background: var(--bg-warm-matcha); border: 1px solid #BBF7D0; border-radius: var(--radius-sm); padding: 0.8rem 1rem; display: flex; align-items: center; gap: 0.6rem;">
+                <span class="veg-icon-badge"></span>
+                <span style="font-size: 0.85rem; color: #166534; font-weight: 600;">
+                  All custom anime cakes can be prepared 100% Eggless & Pure Veg at no extra charge!
+                </span>
+              </div>
+            </div>
+
+            <!-- Right: Live Preview Stage -->
+            <div class="customizer-stage-card">
+              <div class="stage-cake-icon" id="stageIcon">⚡</div>
+              <h3 class="stage-title" id="stageTitle">Rohan’s Birthday Anime Celebration!</h3>
+              <div class="stage-character-badge" id="stageCharacterBadge">One Piece Devil Fruit Pinata</div>
+
+              <div class="stage-specs-table">
+                <div class="spec-entry">
+                  <span class="spec-label">Anime Honoree:</span>
+                  <span class="spec-value" id="stageNameVal">Rohan</span>
+                </div>
+                <div class="spec-entry">
+                  <span class="spec-label">Milestone Topper:</span>
+                  <span class="spec-value" id="stageAgeVal">Birthday Cake Topper</span>
+                </div>
+                <div class="spec-entry">
+                  <span class="spec-label">Flavor:</span>
+                  <span class="spec-value" id="stageFlavorVal">Belgian Dark Chocolate</span>
+                </div>
+                <div class="spec-entry">
+                  <span class="spec-label">Portion Size:</span>
+                  <span class="spec-value" id="stageTierVal">2 Tiers (Serves 18-20)</span>
+                </div>
+                <div class="spec-entry">
+                  <span class="spec-label">Dietary:</span>
+                  <span class="spec-value" style="color: var(--veg-green);">100% Eggless Pure Veg 🌱</span>
+                </div>
+              </div>
+
+              <div class="stage-rupee-price-total">
+                <span style="font-size: 0.88rem; color: var(--text-muted); font-weight: 600;">Estimated Total</span>
+                <span class="calc-price-amount" id="stagePriceVal">₹2,699</span>
+              </div>
+
+              <button class="btn-book-custom-cake" onclick="submitCustomCakeRequest()">
+                <span>🎂</span> Book This Custom Anime Cake
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 4: PURITY & CRAFTSMANSHIP GUARANTEE
+         ========================================== -->
+    <section class="guarantee-section" id="safety">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Pure & Artisanal</span>
+          <h2 class="section-heading">Our Otaku Quality & Safety Promise</h2>
+          <p class="section-subtext">
+            Every anime cake combines aesthetic perfection with the finest certified ingredients.
+          </p>
+        </div>
+
+        <div class="guarantee-grid">
+          <div class="guarantee-card">
+            <div class="guarantee-icon">🌱</div>
+            <h4>100% Eggless Pure Veg Available</h4>
+            <p>Every single anime cake design is available in pure vegetarian, eggless sponge crafted with fresh organic dairy and silky compotes.</p>
+          </div>
+
+          <div class="guarantee-card">
+            <div class="guarantee-icon">🍵</div>
+            <h4>Authentic Japanese Flavor Ingredients</h4>
+            <p>We use genuine culinary-grade Uji matcha, real freeze-dried strawberries, and premium Belgian couverture chocolate.</p>
+          </div>
+
+          <div class="guarantee-card">
+            <div class="guarantee-icon">🔨</div>
+            <h4>Safe Food-Grade Mallet & Dowels</h4>
+            <p>Multi-tier and pinata cakes use food-safe wooden smash mallets and sturdy internal supports tested for party safety.</p>
+          </div>
+
+          <div class="guarantee-card">
+            <div class="guarantee-icon">🚗</div>
+            <h4>Shock-Proof Temperature Box</h4>
+            <p>Shipped in insulated, heavy-duty carriers so that delicate anime figurines, swords, and sugar hairpieces arrive in mint condition.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       SITE FOOTER
+       ========================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">
+            <span>⚡</span> Petal & Crumb Anime Patisserie
+          </div>
+          <p style="font-size: 0.9rem; margin-top: 0.5rem; max-width: 440px; color: #B5A19B;">
+            Bringing the world’s most iconic anime heroes to celebrations with pinata smash cakes, 3D fondant art, and fresh matcha-cream cakes in Indian Rupees (₹).
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#cake-types">Anime Styles</a>
+          <a href="#catalog">Anime Catalog</a>
+          <a href="#customizer">Custom Cake Lab</a>
+          <a href="#safety">Purity Guarantee</a>
+          <a href="index.html">Main Patisserie & World Cakes 🌍</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 Petal & Crumb Patisserie. All rights reserved. Prices inclusive of all applicable taxes.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       MODAL DIALOG: ANIME CAKE DETAILS & INQUIRY
+       ========================================== -->
+  <dialog id="cakeDetailModal" aria-labelledby="modalTitle">
+    <div class="modal-dialog-inner">
+      <button class="modal-close-btn" onclick="closeCakeModal()" aria-label="Close dialog">✕</button>
+      <img id="modalImg" class="modal-banner-img" src="" alt="Anime Cake Showcase">
+
+      <div class="modal-content-wrap">
+        <div class="modal-top-tags">
+          <span class="mini-char-pill" id="modalType">Pinata Smash Cake</span>
+          <span style="font-size: 0.8rem; font-weight: 700; color: var(--brand-gold);" id="modalFranchise">Anime Franchise</span>
+        </div>
+
+        <h3 class="modal-cake-title" id="modalTitle">Cake Title</h3>
+        <p class="modal-description" id="modalDesc">Detailed description of cake ingredients and design...</p>
+
+        <div class="modal-specs-grid">
+          <div class="modal-spec-item">
+            <strong>Portion Size & Weight:</strong>
+            <span id="modalPortion">1 Kg (Serves 8-10)</span>
+          </div>
+          <div class="modal-spec-item">
+            <strong>Signature Flavor:</strong>
+            <span id="modalFlavor">Belgian Dark Chocolate</span>
+          </div>
+          <div class="modal-spec-item">
+            <strong>Dietary Category:</strong>
+            <span style="color: var(--veg-green);">100% Eggless Pure Veg 🌱</span>
+          </div>
+          <div class="modal-spec-item">
+            <strong>Price in Rupees:</strong>
+            <span id="modalPrice" style="color: var(--brand-sakura); font-size: 1.25rem;">₹2,199</span>
+          </div>
+        </div>
+
+        <div class="modal-footer-row">
+          <button class="btn-details" onclick="closeCakeModal()">
+            Continue Browsing
+          </button>
+          <button class="btn-order-now" onclick="bookFromModal()">
+            <span>🎂</span> Book This Anime Cake
+          </button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Friendly Toast Popup -->
+  <div class="cake-toast" id="cakeToast" role="status" aria-live="polite">
+    <span style="font-size: 1.4rem;">🎂</span>
+    <span id="toastMsg">Order request placed!</span>
+  </div>
+
+  <!-- Interactive JavaScript -->
+  <script src="anime-script.js"></script>
+</body>
+</html>
