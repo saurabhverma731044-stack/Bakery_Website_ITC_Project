@@ -5,7 +5,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    console.log("Maison de Sucre website is ready!");
+    console.log("Velvet Oven website is ready!");
 
     /* ==========================================
        1. PRODUCT PRICE CALCULATOR
