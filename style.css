@@ -1,0 +1,50 @@
+/* =================================
+   MITHAAS - GLOBAL STYLES
+================================= */
+
+/* 1. Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Website color palette */
+:root {
+    --primary-green: #354C3C;
+    --dark-green: #26382D;
+    --light-green: #E8EDE5;
+
+    --cream: #F8F7F0;
+    --white: #FFFFFF;
+
+    --accent-yellow: #D6AD55;
+
+    --text-dark: #26382D;
+    --text-light: #777777;
+}
+
+/* 3. Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cream);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* 4. Remove default link styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 5. Remove default list styling */
+ul {
+    list-style: none;
+}
+
+/* 6. Make images responsive */
+img {
+    max-width: 100%;
+    display: block;
+}
