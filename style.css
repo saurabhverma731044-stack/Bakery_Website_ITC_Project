@@ -48,3 +48,59 @@ img {
     max-width: 100%;
     display: block;
 }
+
+
+/* =================================
+   NAVIGATION BAR
+================================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: var(--cream);
+}
+
+/* Website Logo */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: var(--accent-yellow);
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-links a {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--dark-green);
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-yellow);
+}
+
+/* Pre-order Button */
+.order-btn {
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: var(--dark-green);
+}
