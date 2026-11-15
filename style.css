@@ -104,3 +104,96 @@ img {
 .order-btn:hover {
     background-color: var(--dark-green);
 }
+
+/* =================================
+   HERO SECTION
+================================= */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 65px 8% 85px;
+    min-height: 550px;
+}
+
+/* Hero Text Content */
+.hero-content {
+    flex: 1;
+    max-width: 550px;
+}
+
+.hero-tagline {
+    color: var(--primary-green);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    line-height: 1.15;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.hero-content h1 span {
+    color: var(--primary-green);
+}
+
+.hero-description {
+    color: var(--text-light);
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 450px;
+    margin-bottom: 30px;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.primary-btn {
+    background-color: var(--primary-green);
+    color: var(--white);
+}
+
+.primary-btn:hover {
+    background-color: var(--dark-green);
+}
+
+.secondary-btn {
+    border: 1px solid var(--primary-green);
+    color: var(--primary-green);
+}
+
+.secondary-btn:hover {
+    background-color: var(--light-green);
+}
+
+/* Hero Image */
+.hero-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 180px 180px 15px 15px;
+}
