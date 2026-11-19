@@ -368,6 +368,100 @@
     </div>
 
 </section>
+<!-- =================================
+     PRE-ORDER SECTION
+================================= -->
+
+<section class="order-section" id="order">
+
+    <!-- Section Heading -->
+    <div class="section-heading">
+        <p>MAKE IT YOURS</p>
+        <h2>Place Your Pre-order</h2>
+        <span>Choose your favourite treats and let us prepare something special.</span>
+    </div>
+
+    <!-- Pre-order Form -->
+    <form class="order-form" id="orderForm">
+
+        <!-- Customer Name -->
+        <div class="form-group">
+            <label for="customerName">Your Name</label>
+            <input type="text" id="customerName"
+                   placeholder="Enter your name" required>
+        </div>
+
+        <!-- Product Selection -->
+        <div class="form-group">
+            <label for="product">Choose Your Product</label>
+
+            <select id="product" required>
+                <option value="" data-price="0">Select a product</option>
+
+                <option value="Chocolate Pastry" data-price="60">
+                    Chocolate Pastry - ₹60
+                </option>
+
+                <option value="Red Velvet Pastry" data-price="75">
+                    Red Velvet Pastry - ₹75
+                </option>
+
+                <option value="Pineapple Pastry" data-price="50">
+                    Pineapple Pastry - ₹50
+                </option>
+
+                <option value="Black Forest Pastry" data-price="65">
+                    Black Forest Pastry - ₹65
+                </option>
+
+                <option value="Mango Pastry" data-price="60">
+                    Mango Pastry - ₹60
+                </option>
+
+                <option value="Chocolate Chip Cookies" data-price="40">
+                    Chocolate Chip Cookies - ₹40
+                </option>
+
+                <option value="Butter Cookies" data-price="35">
+                    Butter Cookies - ₹35
+                </option>
+
+                <option value="Chocolate Brownie" data-price="70">
+                    Chocolate Brownie - ₹70
+                </option>
+
+            </select>
+        </div>
+
+        <!-- Quantity Selector -->
+        <div class="form-group">
+            <label>Quantity</label>
+
+            <div class="quantity-selector">
+
+                <button type="button" id="decrease">−</button>
+
+                <span id="quantity">1</span>
+
+                <button type="button" id="increase">+</button>
+
+            </div>
+        </div>
+
+        <!-- Total Price -->
+        <div class="total-price">
+            <span>Total Amount</span>
+            <h3>₹<span id="total">0</span></h3>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">
+            Place My Order
+        </button>
+
+    </form>
+
+</section>
 
 
 <!-- Connects JavaScript with HTML -->
