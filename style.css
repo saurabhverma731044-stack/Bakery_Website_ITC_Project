@@ -480,3 +480,145 @@ img {
     color: #D0D8D1;
     font-size: 13px;
 }
+
+
+/* =================================
+   RESPONSIVE DESIGN
+   Tablet and Mobile Screens
+================================= */
+
+
+/* Tablets and smaller laptops */
+@media (max-width: 900px) {
+
+    /* Navbar spacing */
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    /* Hero section */
+    .hero {
+        padding: 50px 5%;
+        gap: 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    /* About section */
+    .about {
+        padding: 65px 5%;
+        gap: 35px;
+    }
+
+    .about-content h2 {
+        font-size: 32px;
+    }
+
+    /* Footer */
+    .footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+}
+
+
+/* Mobile screens */
+@media (max-width: 600px) {
+
+    /* Navbar */
+    .navbar {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .navbar nav {
+        order: 3;
+        width: 100%;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .order-btn {
+        padding: 10px 15px;
+    }
+
+    /* Hero section */
+    .hero {
+        flex-direction: column;
+        padding: 40px 6%;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-image img {
+        height: 300px;
+    }
+
+    /* Section headings */
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    /* Category cards */
+    .category-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* About section */
+    .about {
+        flex-direction: column;
+        padding: 55px 6%;
+    }
+
+    .about-image img {
+        height: 300px;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+    }
+
+    /* Product cards */
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Pre-order form */
+    .order-form {
+        padding: 25px 18px;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}
