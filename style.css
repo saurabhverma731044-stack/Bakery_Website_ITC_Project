@@ -409,3 +409,74 @@ img {
 .about-content .primary-btn {
     margin-top: 8px;
 }
+
+/* =================================
+   WEBSITE FOOTER
+================================= */
+
+.footer {
+    background-color: var(--dark-green);
+    color: var(--white);
+    padding: 55px 8% 20px;
+}
+
+/* Footer Columns */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 35px;
+}
+
+/* Brand Information */
+.footer-brand h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.footer-brand h2 span {
+    color: var(--accent-yellow);
+}
+
+.footer-brand p {
+    color: #D0D8D1;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Footer Links and Contact */
+.footer-links,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.footer-links a,
+.footer-contact p {
+    color: #D0D8D1;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: var(--accent-yellow);
+}
+
+/* Copyright */
+.footer-bottom {
+    border-top: 1px solid #536457;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #D0D8D1;
+    font-size: 13px;
+}
