@@ -1,4 +1,4 @@
-```javascript
+
 // =================================
 // MITHAAS - WEBSITE JAVASCRIPT
 // =================================
@@ -106,4 +106,3 @@ orderForm.addEventListener("submit", function(event) {
     );
 
 });
-```
