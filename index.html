@@ -86,7 +86,7 @@
             <span class="category-number">01</span>
             <h3>Celebration Cakes</h3>
             <p>Make every occasion sweeter with our special cakes.</p>
-            <a href="#order">Explore Collection →</a>
+            <a href="#cakes">Explore Collection →</a>
         </div>
 
         <!-- Pastries -->
@@ -94,7 +94,7 @@
             <span class="category-number">02</span>
             <h3>Fresh Pastries</h3>
             <p>Delicious little treats for your everyday cravings.</p>
-            <a href="#order">Explore Collection →</a>
+            <a href="#pastries">Explore Collection →</a>
         </div>
 
         <!-- Cookies and Treats -->
@@ -102,7 +102,7 @@
             <span class="category-number">03</span>
             <h3>Cookies & Treats</h3>
             <p>Enjoy delightful bites made to brighten your day.</p>
-            <a href="#order">Explore Collection →</a>
+            <a href="#treats">Explore Collection →</a>
             
         </div>
 
@@ -396,7 +396,31 @@
             <label for="product">Choose Your Product</label>
 
             <select id="product" required>
-                <option value="" data-price="0">Select a product</option>
+                <!-- Cake Options -->
+                <option value="Chocolate Truffle" data-price="399">
+                    Chocolate Truffle - ₹399
+                </option>
+
+                <option value="Black Forest Cake" data-price="349">
+                    Black Forest Cake - ₹349
+                </option>
+
+                <option value="Red Velvet Cake" data-price="449">
+                    Red Velvet Cake - ₹449
+                </option>
+
+                <option value="Pineapple Cake" data-price="299">
+                    Pineapple Cake - ₹299
+                </option>
+
+                <option value="Butterscotch Cake" data-price="349">
+    Butterscotch Cake - ₹349
+                </option>
+
+                <option value="Classic Vanilla Cake" data-price="299">
+                    Classic Vanilla Cake - ₹299
+                </option>
+                
 
                 <option value="Chocolate Pastry" data-price="60">
                     Chocolate Pastry - ₹60
@@ -460,6 +484,12 @@
         </button>
 
     </form>
+
+    <div id="successMessage" class="success-message">
+    <h3>🎉 Order Successful!</h3>
+    <p>Thank you for choosing MITHAAS!</p>
+    <p>Your order has been placed successfully.</p>
+</div>
 
 </section>
 

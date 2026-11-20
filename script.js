@@ -45,11 +45,19 @@ function calculateTotal() {
 
 increaseButton.addEventListener("click", function() {
 
-    quantity++;
+    if (quantity < 20) {
 
-    quantityDisplay.textContent = quantity;
+        quantity++;
 
-    calculateTotal();
+        quantityDisplay.textContent = quantity;
+
+        calculateTotal();
+
+    } else {
+
+        alert("Maximum order quantity is 20!");
+
+    }
 
 });
 
@@ -84,25 +92,41 @@ productSelect.addEventListener("change", function() {
 
 orderForm.addEventListener("submit", function(event) {
 
-    // Prevent the page from refreshing
     event.preventDefault();
 
-    // Check whether a product is selected
-    if (productSelect.value === "") {
-
-        alert("Please select a product!");
-
+    if (customerName.value.trim() === "") {
+        alert("Please enter your name!");
         return;
-
     }
 
-    // Display order confirmation
-    alert(
-        "Thank you, " + customerName.value + "!\n\n" +
-        "Your selected product: " + productSelect.value + "\n" +
-        "Quantity: " + quantity + "\n" +
-        "Total Amount: ₹" + totalDisplay.textContent + "\n\n" +
-        "This is a demo order confirmation from MITHAAS."
-    );
+    if (productSelect.value === "") {
+        alert("Please select a product!");
+        return;
+    }
+
+    // Show success message
+    const successMessage = document.getElementById("successMessage");
+
+    successMessage.style.display = "block";
+
+    // Hide success message after 5 seconds
+setTimeout(function() {
+    successMessage.style.display = "none";
+}, 5000);
+
+    successMessage.innerHTML =
+        "<h3>🎉 Order Successful!</h3>" +
+        "<p>Thank you, " + customerName.value + "!</p>" +
+        "<p>Product: " + productSelect.value + "</p>" +
+        "<p>Quantity: " + quantity + "</p>" +
+        "<p>Total Amount: ₹" + totalDisplay.textContent + "</p>" +
+        "<p>Thank you for choosing MITHAAS!</p>";
+
+    // Reset form
+    orderForm.reset();
+
+    quantity = 1;
+    quantityDisplay.textContent = quantity;
+    totalDisplay.textContent = 0;
 
 });
